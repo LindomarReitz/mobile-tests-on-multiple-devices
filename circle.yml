@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - bundle exec rake test_sauce -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml
+    - bundle exec rake test_sauce
