@@ -28,4 +28,4 @@ Tests in Parallel:
 $ rake test_sauce
 ```
 
-This project was based on [Ruby-RSpec-Selenium] (https://github.com/saucelabs-sample-test-frameworks/Ruby-RSpec-Selenium)
+This project was based on [Ruby-RSpec-Selenium](https://github.com/saucelabs-sample-test-frameworks/Ruby-RSpec-Selenium)
