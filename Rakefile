@@ -1,5 +1,5 @@
 def run_tests(emulator, junit_dir)
-  system("appiumVersion=\"1.5.2\" deviceName=\"#{emulator}\" deviceOrientation=\"portrait\"  platformVersion=\"4.4\" platformName=\"Android\" browserName='' app=\"sauce-storage: grana.apk\" JUNIT_DIR=\"#{junit_dir}\" bundle exec rspec spec/main_spec.rb -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml")
+  system("appiumVersion=\"1.6.5\" deviceName=\"#{emulator}\" deviceOrientation=\"portrait\"  platformVersion=\"4.4\" platformName=\"Android\" browserName='' app=\"sauce-storage: grana.apk\" JUNIT_DIR=\"#{junit_dir}\" bundle exec rspec spec/main_spec.rb -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml")
 end
 
 task :samsung_galaxy_s3 do
