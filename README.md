@@ -17,6 +17,32 @@ This project basically run some tests on multiple devices using the Sauce Labs t
 	```
 	$ bundle install
 	```
+	
+### Upload APK file to Sauce Labs
+
+To upload the APK file, run the following command:
+
+```
+curl -u <sauce_username>:<sauce_access_key> -X POST -H "Content-Type: application/octet-stream" https://saucelabs.com/rest/v1/storage/<sauce_username>/grana.apk?overwrite=true --data-binary @grana.apk
+```
+	
+### Using docker
+
+If you want to build your own image, run the following command:
+
+```
+docker build -t <your_tag> Dockerfile
+```
+
+To acess the container, run the following commands:
+
+docker run -it -d --name <your container> -e SAUCE_USERNAME="<your Sauce Labs username>" -e SAUCE_ACCESS_KEY="<your Sauce Labs access key>" <your_image>
+
+```
+docker exec -it <your container> bin/bash
+cd home/mobile-tests-on-multiple-devices
+```
+
 ### Running Tests
 
 Tests in a specific device:
