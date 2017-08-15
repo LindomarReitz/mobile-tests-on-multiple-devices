@@ -34,11 +34,10 @@ If you want to build your own image, run the following command:
 docker build -t <your_tag> Dockerfile
 ```
 
-To acess the container, run the following commands:
-
-docker run -it -d --name <your container> -e SAUCE_USERNAME="<your Sauce Labs username>" -e SAUCE_ACCESS_KEY="<your Sauce Labs access key>" <your_image>
+To access the container, run the following commands:
 
 ```
+docker run -it -d --name <your container> -e SAUCE_USERNAME="<your Sauce Labs username>" -e SAUCE_ACCESS_KEY="<your Sauce Labs access key>" <your_image>
 docker exec -it <your container> bin/bash
 cd home/mobile-tests-on-multiple-devices
 ```
