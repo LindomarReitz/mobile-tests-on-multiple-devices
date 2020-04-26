@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  ruby:
+    image: ruby:2.7.0
+    volumes:
+      - .:/src
+    environment: 
+      - SAUCE_USERNAME
+      - SAUCE_ACCESS_KEY  
+    working_dir: /src  
+    command: tail -f /dev/null
