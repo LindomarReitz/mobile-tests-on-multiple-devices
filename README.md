@@ -54,3 +54,5 @@ $ rake test_sauce
 ```
 
 This project was based on [Ruby-RSpec-Selenium](https://github.com/saucelabs-sample-test-frameworks/Ruby-RSpec-Selenium)
+
+![Testing Powered By SauceLabs](https://raw.githubusercontent.com/saucelabs/opensource/master/assets/powered-by-saucelabs-badge-white.svg?sanitize=true "Testing Powered By SauceLabs")
